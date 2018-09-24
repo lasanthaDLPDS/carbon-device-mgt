@@ -128,17 +128,18 @@ public interface ApplicationManagementAPI {
                     name = "filter",
                     value = "Filter to get application list",
                     required = true)
-            @Valid Filter filter,
-            @ApiParam(
-                    name = "offset",
-                    value = "offset",
-                    defaultValue = "0")
-            @QueryParam("offset") int offset,
-            @ApiParam(
-                    name = "limit",
-                    value = "limit",
-                    defaultValue = "20")
-            @QueryParam("limit") int limit
+            @Valid Filter filter
+//            ,
+//            @ApiParam(
+//                    name = "offset",
+//                    value = "offset",
+//                    defaultValue = "0")
+//            @QueryParam("offset") int offset,
+//            @ApiParam(
+//                    name = "limit",
+//                    value = "limit",
+//                    defaultValue = "20")
+//            @QueryParam("limit") int limit
     );
 
     @GET
